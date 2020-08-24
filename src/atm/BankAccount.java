@@ -10,7 +10,6 @@ public class BankAccount {
         this.id = id;
         this.name = name;
         this.type = type;
-        this.balance = 0;
     }
 
     public BankAccount(int id, String name, String type, double balance) {
