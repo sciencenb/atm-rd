@@ -5,7 +5,7 @@ public class CustomerMain {
         Customer c1 = new Customer(1,"Peter","1234567890123");
         Customer c2 = new Customer(2,"Nancy","1234567890123");
 
-        Bank B1 = new Bank("KTB");
+        Bank B1 = new Bank("KTB", new WSDatasource());
 
         B1.addCustoer(c1);
         B1.addCustoer(c2);

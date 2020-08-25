@@ -1,17 +1,22 @@
 package atm;
 
-import javax.xml.crypto.Data;
 import java.util.ArrayList;
 
 public class Bank {
     private String name;
     private ArrayList<Customer> customers;
+//    private DatabaseDataSource dataSource;
+//    private WSDatasource wsDatasource;
+
     private DataSource dataSource;
 
-    public Bank(String name) {
+    public Bank(String name, DataSource dataSource) {
         this.name = name;
 //        this.customers = new ArrayList<>();
-        this.dataSource = new DataSource();
+//        this.dataSource = new DatabaseDataSource();
+//        this.customers = dataSource.getCustomerData();
+
+        this.dataSource = dataSource;
         this.customers = dataSource.getCustomerData();
     }
 
