@@ -13,6 +13,10 @@ public class Customer {
         this.account = new BankAccount(id, name, "Saving");
     }
 
+    public boolean chkPin(String pin) {
+        return this.pin.equals(pin);
+    }
+
     public int getId() {
         return id;
     }
